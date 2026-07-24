@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pago JOLSOON</title>
+
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAvyvTSSdbN3xyYLaWahIetKxTZEHWeEWQdSUr-Vy9lf1uAzFYSpIhq2bWGrZUcTjgE2pLWINphYI2tx8&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
+</head>
+
+<body>
+
+  <h1>Compra tu producto JOLSOON</h1>
+
+  <p>Realiza tu pago de forma segura con PayPal.</p>
+
+  <div id="paypal-container-6CFMTXNU3M8GW"></div>
+
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "6CFMTXNU3M8GW",
+    }).render("#paypal-container-6CFMTXNU3M8GW")
+  </script>
+
+</body>
+</html>
